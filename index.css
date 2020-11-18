@@ -1,0 +1,50 @@
+#background{
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(25, 25, 75);
+    bottom: 0;
+    max-width: 800px;
+}
+
+#background_details{
+    position: relative;
+    min-width: 800px;
+    height: 70%;
+    bottom: -30%;
+    overflow: hidden;
+}
+
+.sliding-trees {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    animation: slide 10s linear infinite;
+    position: absolute;
+}
+  
+@keyframes slide {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-50%, 0);
+    }
+  }
+  
+
+#caravan_div {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    bottom: 8vh;
+}
+
+#caravan {
+    max-height: 35vh;
+    align-content: center;
+}
+
+.audio {
+  height: 0;
+}
