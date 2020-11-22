@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-#background{
+.background{
     height: 100vh;
     margin: auto;
     background-color: rgb(25, 25, 75);
@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 
-#greetings {
+.greetings {
   color: white;
   padding-top: 10vh;
   animation: color-change 5s ease-in-out infinite;
@@ -23,7 +23,7 @@ body {
   100% { color: white; }
 }
 
-#text, #name{
+.text, .name{
   font-size: 6rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 80%;
@@ -31,7 +31,7 @@ body {
   text-align: center;
 }
 
-#background_details{
+.background-details{
     position: absolute;
     min-width: 100%;
     max-width: 800px;
@@ -58,7 +58,7 @@ body {
   }
   
 
-#caravan_div {
+.caravan-div {
     position: absolute;
     width: 100%;
     margin: auto;
@@ -66,14 +66,14 @@ body {
     display: block;
 }
 
-#caravan {
+.caravan {
     max-height: 35vh;
     align-content: center;
     display:block;
     margin: auto;
 }
 
-#music {
+.music {
   background-image: url("./assets/img/silent_music.svg");
   background-color: transparent;
   background-repeat: no-repeat;

@@ -1,6 +1,8 @@
 var toggleAudio = function () {
-    let player = document.getElementById('player');
-    let controls = document.getElementById('music');
+    
+    let player = document.getElementsByClassName('player')[0];
+    let controls = document.getElementsByClassName('music')[0];
+
     if ( player.classList.contains('on')) { 
         player.pause();
         player.classList.remove('on');
