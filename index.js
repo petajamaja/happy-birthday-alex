@@ -17,3 +17,8 @@ var toggleAudio = function () {
 }
 
 window.toggleAudio = toggleAudio;
+
+window.onload = function(){
+    var background = document.getElementsByClassName('background')[0];
+    background.style.height = window.innerHeight + 'px';
+}
