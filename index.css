@@ -18,7 +18,8 @@ body {
 
 @keyframes color-change {
   0% { color: white; }
-  50% { color: #ffdd47; }
+  25% { color: #ffdd47; }
+  50% { color: #ff9b9b; }
   100% { color: white; }
 }
 
