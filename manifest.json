@@ -1,4 +1,7 @@
 {
     "name": "Happy Birthday, Alex!",
-    "display": "standalone"
-}
+    "description": "A birthday present animation for Alex",
+    "start_url": "/",
+    "display": "standalone",
+    "scope": "/"
+  }

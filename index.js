@@ -17,9 +17,3 @@ var toggleAudio = function () {
 }
 
 window.toggleAudio = toggleAudio;
-/**
- * Make sure the address bar is hidden on mobile devices
- */
-window.onload = function(){ 
-    setTimeout(function(){window.scrollTo(0, 1);}, 0);
-}
