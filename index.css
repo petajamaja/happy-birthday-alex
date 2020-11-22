@@ -6,6 +6,26 @@
     max-width: 800px;
 }
 
+#greetings {
+  color: white;
+  padding-top: 10vh;
+  animation: color-change 5s ease-in-out infinite;
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  50% { color: #ffdd47; }
+  100% { color: white; }
+}
+
+#text, #name{
+  font-size: 6rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 #background_details{
     position: relative;
     min-width: 800px;
