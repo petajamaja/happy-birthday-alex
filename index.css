@@ -1,26 +1,19 @@
 body {
   margin: 0;
 }
+
 .background{
-    height: 100vh;
-    margin: auto;
-    background-color: rgb(25, 25, 75);
-    min-width: 80%;
-    max-width: 800px;
-    position: relative;
+  height: 100vh;
+  margin: auto;
+  background-color: rgb(25, 25, 75);
+  max-width: 80%;
+  position: relative;
 }
 
 .greetings {
   color: white;
   padding-top: 10vh;
   animation: color-change 5s ease-in-out infinite;
-}
-
-@keyframes color-change {
-  0% { color: white; }
-  25% { color: #ffdd47; }
-  50% { color: #ff9b9b; }
-  100% { color: white; }
 }
 
 .text, .name{
@@ -31,10 +24,68 @@ body {
   text-align: center;
 }
 
+.music {
+  background-image: url("./assets/img/silent_music.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  min-width: 120px;
+  height: 8rem;
+  background-size: contain;
+  padding: 0;
+  outline: none;
+  float: right;
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.caravan-div {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  bottom: 3vh;
+  display: block;
+}
+
+.caravan {
+  max-height: 35vh;
+  align-content: center;
+  display:block;
+  margin: auto;
+}
+
+@media (min-width: 301px) and (max-width: 800px) {
+  .background{
+    max-width: 100%;
+  }
+  .greetings {
+    padding-top: 2rem;
+  }
+  .text, .name{
+    font-size: 4.6rem;
+  }
+  .caravan {
+    width: 80%;
+  }
+  .music {
+    min-width: 4rem;
+    top:1rem;
+    right: 0;
+    height: 4.6em;
+  }
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  25% { color: #ffdd47; }
+  50% { color: #ff9b9b; }
+  100% { color: white; }
+}
+
 .background-details{
     position: absolute;
     min-width: 100%;
-    max-width: 800px;
     height: 70%;
     bottom: 0;
     overflow: hidden;
@@ -56,35 +107,3 @@ body {
       transform: translate(-50%, 0);
     }
   }
-  
-
-.caravan-div {
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    bottom: 3vh;
-    display: block;
-}
-
-.caravan {
-    max-height: 35vh;
-    align-content: center;
-    display:block;
-    margin: auto;
-}
-
-.music {
-  background-image: url("./assets/img/silent_music.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  min-width: 120px;
-  height: 100px;
-  background-size: auto 100%;
-  padding: 0;
-  outline: none;
-  float: right;
-  position: absolute;
-  top:10px;
-  right: 10px;
-}
