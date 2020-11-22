@@ -1,5 +1,5 @@
 var toggleAudio = function () {
-    
+
     let player = document.getElementsByClassName('player')[0];
     let controls = document.getElementsByClassName('music')[0];
 
@@ -17,3 +17,9 @@ var toggleAudio = function () {
 }
 
 window.toggleAudio = toggleAudio;
+/**
+ * Make sure the address bar is hidden on mobile devices
+ */
+window.onload = function(){ 
+    setTimeout(function(){window.scrollTo(0, 1);}, 0);
+}
