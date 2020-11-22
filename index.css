@@ -1,9 +1,13 @@
+body {
+  margin: 0;
+}
 #background{
     height: 100vh;
     margin: auto;
     background-color: rgb(25, 25, 75);
-    bottom: 0;
+    min-width: 80%;
     max-width: 800px;
+    position: relative;
 }
 
 #greetings {
@@ -27,15 +31,15 @@
 }
 
 #background_details{
-    position: relative;
-    min-width: 800px;
+    position: absolute;
+    min-width: 100%;
+    max-width: 800px;
     height: 70%;
-    bottom: -30%;
+    bottom: 0;
     overflow: hidden;
 }
 
-.sliding-trees {
-    position: absolute; 
+.sliding-trees { 
     bottom: 0;
     left: 0;
     max-height: 100%;
@@ -54,15 +58,18 @@
   
 
 #caravan_div {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 100%;
     margin: auto;
-    bottom: 8vh;
+    bottom: 3vh;
+    display: block;
 }
 
 #caravan {
     max-height: 35vh;
     align-content: center;
+    display:block;
+    margin: auto;
 }
 
 #music {
