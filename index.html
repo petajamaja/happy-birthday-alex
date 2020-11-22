@@ -4,10 +4,13 @@
 <head>
     <title>Happy Birthday, Future Nomad!</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <div id="background">
+        <audio id="player" class="pause" src="./assets/audio/denver.mp3" loop autoplay="true"></audio>
+        <button id="music" onclick="toggleAudio()"></button> 
         <div id="background_details">
             <object class="sliding-trees" type="image/svg+xml" data="./assets/img/city_night.svg">
                 <img src="./assets/img/city_night.svg" alt="trees"/>
